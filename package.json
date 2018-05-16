@@ -1,0 +1,24 @@
+{
+  "name": "ra-language-russian",
+  "version": "2.0.0-RC4",
+  "description": "Russian translations for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Klucherev/ra-language-russian.git"
+  },
+  "keywords": [
+    "react",
+    "react-admin",
+    "translation"
+  ],
+  "author": "Klucherev Alexey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Klucherev/ra-language-russian/issues"
+  },
+  "homepage": "https://github.com/Klucherev/ra-language-russian#readme"
+}
