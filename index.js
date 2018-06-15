@@ -46,7 +46,7 @@ module.exports = {
               many_missing:
                   'Недоступна как минимум одна ссылка на данные',
               single_missing:
-                  'Выюранная ссылка больше недоступна',
+                  'Выбранная ссылка больше недоступна',
           }
       },
       message: {
@@ -56,7 +56,7 @@ module.exports = {
           about: 'Справка',
           not_found: 'Вы набрали неверный URL-адрес или перешли по некорректной ссылке',
           loading: 'Страница загружается',
-          invalid_form: 'На форме обнаружены ошибки',
+          invalid_form: 'В форме обнаружены ошибки',
           delete_title: 'Удалить %{name} #%{id}',
           delete_content: 'Вы уверены, что хотите удалить?',
           bulk_delete_title:
@@ -96,7 +96,7 @@ module.exports = {
           minValue: 'Минимальное значение %{min}',
           maxValue: 'Значение может быть %{max} или меньше',
           number: 'Должно быть цифрой',
-          email: 'Не корректный email',
+          email: 'Некорректный email',
           oneOf: 'Должно быть одно из: %{options}',
           regex: 'Должно соответствовать формату (regexp): %{pattern}',
       },
