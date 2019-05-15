@@ -1,103 +1,98 @@
 module.exports = {
     ra: {
-        action: {
-            delete: 'Удалить',
-            show: 'Просмотр',
-            list: 'Список',
-            save: 'Сохранить',
-            create: 'Создать',
-            edit: 'Редактировать',
-            sort: 'Сортировать',
-            cancel: 'Отмена',
-            undo: 'Отменить',
-            refresh: 'Обновить',
+        action: { 
             add_filter: 'Добавить фильтр',
-            remove_filter: 'Убрать фильтр',
-            back: 'Назад',
-            bulk_actions: '%{smart_count} выбрано',
             add: 'Добавить',
-            remove: 'Удалить',
-            search: 'Найти',
+            back: 'Назад',
+            bulk_actions: '1 выбрано |||| %{smart_count} выбрано',
+            cancel: 'Отмена',
             clear_input_value: 'Очистить',
             clone: 'Дублировать',
-            export: 'Экспортировать',
+            confirm: 'Подтвердить',
+            create: 'Создать',
+            delete: 'Удалить',
+            edit: 'Редактировать',
+            export: 'Экспорт',
+            list: 'Список',
+            refresh: 'Обновить',
+            remove_filter: 'Убрать фильтр',
+            remove: 'Удалить',
+            save: 'Сохранить',
+            search: 'Поиск',
+            show: 'Просмотр',
+            sort: 'Сортировка',
+            undo: 'Отменить'
         },
-        boolean: {
-            true: 'Да',
-            false: 'Нет',
-        },
+        boolean: { true: 'Да', false: 'Нет' },
         page: {
-            list: '%{name}',
-            edit: '%{name} #%{id}',
-            show: '%{name} #%{id}',
             create: 'Создать %{name}',
-            delete: 'Удалить %{name} #%{id}',
             dashboard: 'Главная',
-            not_found: 'Страница не найдена',
-            loading: 'Загрузка',
+            edit: '%{name} #%{id}',
             error: 'Что-то пошло не так',
+            list: '%{name}',
+            loading: 'Загрузка',
+            not_found: 'Не найдено',
+            show: '%{name} #%{id}'
         },
         input: {
             file: {
                 upload_several: 'Перетащите файлы сюда или нажмите для выбора.',
-                upload_single: 'Перетащите файл сюда или нажмите для выбора.',
+                upload_single: 'Перетащите файлы сюда или нажмите для выбора.'
             },
             image: {
-                upload_several: 'Перетащите изображения сюда или нажмите для выбора.',
-                upload_single: 'Перетащите изображение сюда или нажмите для выбора.',
+                upload_several: 'Перетащите файлы сюда или нажмите для выбора.',
+                upload_single: 'Перетащите файл сюда или нажмите для выбора.'
             },
             references: {
-                all_missing: 'Не удалось найти связанных данных',
-                many_missing:
-                    'Недоступна как минимум одна ссылка на данные',
-                single_missing:
-                    'Выбранная ссылка больше недоступна',
+                all_missing: 'Связанных данных не найдено',
+                many_missing: 'Некоторые из связанных данных не доступны',
+                single_missing: 'Связанный объект не доступен'
             }
         },
         message: {
-            yes: 'Да',
-            no: 'Нет',
-            are_you_sure: 'Вы уверены?',
             about: 'Справка',
-            not_found: 'Вы набрали неверный URL-адрес или перешли по некорректной ссылке',
-            loading: 'Страница загружается',
-            invalid_form: 'В форме обнаружены ошибки',
-            delete_title: 'Удалить %{name} #%{id}',
-            delete_content: 'Вы уверены, что хотите удалить?',
-            details: 'Детальная информация',
-            error: "Произошла ошибка и ваш запрос не может быть обработан",
-            bulk_delete_title:
-                'Удалить %{name} |||| Удалить %{smart_count} %{name}',
+            are_you_sure: 'Вы уверены?',
             bulk_delete_content:
-                'Вы уверены, что хотите удалить %{name}? |||| Вы уверены, что хотите удалить %{smart_count} %{name}?',
+            'Вы уверены что хотите удалить %{name}? |||| Вы уверены что хотите удалить %{smart_count} объекты?',
+            bulk_delete_title: 'Удалить %{name} |||| Удалить %{smart_count} %{name}',
+            delete_content: 'Вы уверены что хотите удалить этот объект',
+            delete_title: 'Удалить %{name} #%{id}',
+            details: 'Описание',
+            error: 'В процессе запроса возникла ошибка, и он не может быть завершен',
+            invalid_form: 'Форма заполнена неверно, проверьте, пожалуйста, ошибки',
+            loading: 'Идет загрузка, пожалуйста, поджождите...',
+            no: 'Нет',
+            not_found: 'Ошибка URL или вы следуете по неверной ссылке',
+            yes: 'Да'
         },
         navigation: {
             no_results: 'Результатов не найдено',
+            no_more_results: 'Страница %{page} выходит за пределы нумерации, попробуйте предыдущую',
             page_out_of_boundaries: 'Страница %{page} вне границ',
             page_out_from_end: 'Невозможно переместиться дальше последней страницы',
             page_out_from_begin: 'Номер страницы не может быть меньше 1',
             page_range_info: '%{offsetBegin}-%{offsetEnd} из %{total}',
-            page_rows_per_page: 'Кол-во на странице:',
+            page_rows_per_page: 'Строк на странице:',
             next: 'Следующая',
-            prev: 'Предыдущая',
-        },
+            prev: 'Предыдущая' },
         auth: {
-            username: 'Имя пользователя',
             user_menu: 'Профиль',
+            username: 'Имя пользователя',
             password: 'Пароль',
             sign_in: 'Войти',
             sign_in_error: 'Ошибка аутентификации, попробуйте снова',
-            logout: 'Выйти',
+            logout: 'Выйти'
         },
         notification: {
             updated: 'Элемент обновлен',
             created: 'Элемент создан',
             deleted: 'Элемент удален',
-            bad_item: 'Проблемы с элементом',
+            bad_item: 'Элемент не валиден',
             item_doesnt_exist: 'Элемент не существует',
             http_error: 'Ошибка сервера',
+            data_provider_error: 'Ошибка rest client, проверьте консоль',
             canceled: 'Операция отменена',
-            data_provider_error: 'Ошибка в сервисе данных. Проверьте консоль',
+            logged_out: 'Ваша сессия завершена, попробуйте переподключиться/войти снова'
         },
         validation: {
             required: 'Обязательно для заполнения',
@@ -106,9 +101,9 @@ module.exports = {
             minValue: 'Минимальное значение %{min}',
             maxValue: 'Значение может быть %{max} или меньше',
             number: 'Должно быть цифрой',
-            email: 'Некорректный email',
-            oneOf: 'Должно быть одно из: %{options}',
-            regex: 'Должно соответствовать формату (regexp): %{pattern}',
-        },
+            email: 'Не корректный email',
+            oneOf: 'Должно быть одним из: %{options}',
+            regex: 'Должно быть в формате (regexp): %{pattern}'
+        }
     },
 };
