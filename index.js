@@ -113,7 +113,7 @@ module.exports = {
             minValue: "Минимальное значение %{min}",
             maxValue: "Значение может быть %{max} или меньше",
             number: "Должно быть цифрой",
-            email: "Не корректный email",
+            email: "Некорректный email",
             oneOf: "Должно быть одним из: %{options}",
             regex: "Должно быть в формате (regexp): %{pattern}"
         }
