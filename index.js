@@ -4,7 +4,7 @@ module.exports = {
             add_filter: "Добавить фильтр",
             add: "Добавить",
             back: "Назад",
-            bulk_actions: "1 выбрано |||| %{smart_count} выбрано",
+            bulk_actions: "1 выбран |||| %{smart_count} выбрано |||| %{smart_count} выбрано",
             cancel: "Отмена",
             clear_input_value: "Очистить",
             clone: "Дублировать",
@@ -67,9 +67,15 @@ module.exports = {
             about: "Справка",
             are_you_sure: "Вы уверены?",
             bulk_delete_content:
+<<<<<<< HEAD
                 "Вы уверены, что хотите удалить %{name}? |||| Вы уверены, что хотите удалить элементы, кол-вом %{smart_count} ?",
             bulk_delete_title: "Удалить %{name} |||| Удалить %{smart_count} %{name}",
             delete_content: "Вы уверены что хотите удалить этот элемент?",
+=======
+                "Вы уверены, что хотите удалить %{name}? |||| Вы уверены, что хотите удалить объекты, кол-вом %{smart_count} ? |||| Вы уверены, что хотите удалить объекты, кол-вом %{smart_count} ?",
+            bulk_delete_title: "Удалить %{name} |||| Удалить %{smart_count} %{name} |||| Удалить %{smart_count} %{name}",
+            delete_content: "Вы уверены что хотите удалить этот объект",
+>>>>>>> 7cc829ee7a6d2b1311d6b09696c0cc719f676a3c
             delete_title: "Удалить %{name} #%{id}",
             details: "Описание",
             error: "В процессе запроса возникла ошибка, и он не может быть завершен",
@@ -101,9 +107,9 @@ module.exports = {
             logout: "Выйти"
         },
         notification: {
-            updated: "Элемент обновлен |||| %{smart_count} обновлено",
+            updated: "Элемент обновлен |||| %{smart_count} обновлено |||| %{smart_count} обновлено",
             created: "Элемент создан",
-            deleted: "Элемент удален |||| %{smart_count} удалено",
+            deleted: "Элемент удален |||| %{smart_count} удалено |||| %{smart_count} удалено",
             bad_item: "Элемент не валиден",
             item_doesnt_exist: "Элемент не существует",
             http_error: "Ошибка сервера",
