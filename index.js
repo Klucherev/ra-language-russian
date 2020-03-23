@@ -38,7 +38,9 @@ module.exports = {
             list: "%{name}",
             loading: "Загрузка",
             not_found: "Не найдено",
-            show: "%{name} #%{id}"
+            show: "%{name} #%{id}",
+            empty: "Нет %{name}.",
+            invite: "Вы хотите добавить еще одну?",
         },
         input: {
             file: {
@@ -55,15 +57,19 @@ module.exports = {
                     "Некоторые из связанных данных не доступны",
                 single_missing:
                     "Связанный объект не доступен"
-            }
+            },
+            password: {
+                toggle_visible: 'Скрыть пароль',
+                toggle_hidden: 'Показать пароль',
+            },
         },
         message: {
             about: "Справка",
             are_you_sure: "Вы уверены?",
             bulk_delete_content:
-                "Вы уверены, что хотите удалить %{name}? |||| Вы уверены, что хотите удалить объекты, кол-вом %{smart_count} ?",
+                "Вы уверены, что хотите удалить %{name}? |||| Вы уверены, что хотите удалить элементы, кол-вом %{smart_count} ?",
             bulk_delete_title: "Удалить %{name} |||| Удалить %{smart_count} %{name}",
-            delete_content: "Вы уверены что хотите удалить этот объект",
+            delete_content: "Вы уверены что хотите удалить этот элемент?",
             delete_title: "Удалить %{name} #%{id}",
             details: "Описание",
             error: "В процессе запроса возникла ошибка, и он не может быть завершен",
