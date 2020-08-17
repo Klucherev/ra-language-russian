@@ -12,13 +12,12 @@ npm install --save ra-language-russian
 ## Usage
 
 ```js
+import polyglotI18nProvider from 'ra-i18n-polyglot';
 import russianMessages from 'ra-language-russian';
 
-const messages = {
-    'ru': russianMessages,
-};
+const i18nProvider = polyglotI18nProvider(() => russianMessages, 'ru');
 
-<Admin locale="ru" messages={messages}>
+<Admin i18nProvider={i18nProvider}>
   ...
 </Admin>
 ```
