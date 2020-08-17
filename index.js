@@ -4,7 +4,7 @@ module.exports = {
             add_filter: "Добавить фильтр",
             add: "Добавить",
             back: "Назад",
-            bulk_actions: "1 выбрано |||| %{smart_count} выбрано",
+            bulk_actions: "1 выбран |||| %{smart_count} выбрано |||| %{smart_count} выбрано",
             cancel: "Отмена",
             clear_input_value: "Очистить",
             clone: "Дублировать",
@@ -22,13 +22,16 @@ module.exports = {
             show: "Просмотр",
             sort: "Сортировка",
             undo: "Отменить",
+            unselect: "Не выбрано",
             expand: "Раскрыть",
             close: "Закрыть",
+            open_menu: "Открыть меню",
+            close_menu: "Закрыть меню",
         },
         boolean: {
-          true: "Да",
-          false: "Нет",
-          null: ""
+            true: "Да",
+            false: "Нет",
+            null: ""
         },
         page: {
             create: "Создать %{name}",
@@ -38,7 +41,9 @@ module.exports = {
             list: "%{name}",
             loading: "Загрузка",
             not_found: "Не найдено",
-            show: "%{name} #%{id}"
+            show: "%{name} #%{id}",
+            empty: "Нет %{name}.",
+            invite: "Вы хотите добавить еще одну?",
         },
         input: {
             file: {
@@ -55,14 +60,18 @@ module.exports = {
                     "Некоторые из связанных данных не доступны",
                 single_missing:
                     "Связанный объект не доступен"
-            }
+            },
+            password: {
+                toggle_visible: 'Скрыть пароль',
+                toggle_hidden: 'Показать пароль',
+            },
         },
         message: {
             about: "Справка",
             are_you_sure: "Вы уверены?",
             bulk_delete_content:
-                "Вы уверены, что хотите удалить %{name}? |||| Вы уверены, что хотите удалить объекты, кол-вом %{smart_count} ?",
-            bulk_delete_title: "Удалить %{name} |||| Удалить %{smart_count} %{name}",
+                "Вы уверены, что хотите удалить %{name}? |||| Вы уверены, что хотите удалить объекты, кол-вом %{smart_count} ? |||| Вы уверены, что хотите удалить объекты, кол-вом %{smart_count} ?",
+            bulk_delete_title: "Удалить %{name} |||| Удалить %{smart_count} %{name} |||| Удалить %{smart_count} %{name}",
             delete_content: "Вы уверены что хотите удалить этот объект",
             delete_title: "Удалить %{name} #%{id}",
             details: "Описание",
@@ -71,7 +80,9 @@ module.exports = {
             loading: "Идет загрузка, пожалуйста, подождите...",
             no: "Нет",
             not_found: "Ошибка URL или вы следуете по неверной ссылке",
-            yes: "Да"
+            yes: "Да",
+            unsaved_changes:
+                "Некоторые из ваших изменений не были сохранены. Вы уверены, что хотите их игнорировать?",
         },
         navigation: {
             no_results: "Результатов не найдено",
@@ -85,6 +96,11 @@ module.exports = {
             next: "Следующая",
             prev: "Предыдущая"
         },
+        sort: {
+            sort_by: 'Сортировать по %{field} %{order}',
+            ASC: 'возрастанию',
+            DESC: 'убыванию',
+        },
         auth: {
             auth_check_error: "Пожалуйста, авторизуйтесь для продолжения работы",
             user_menu: "Профиль",
@@ -95,9 +111,9 @@ module.exports = {
             logout: "Выйти"
         },
         notification: {
-            updated: "Элемент обновлен |||| %{smart_count} обновлено",
+            updated: "Элемент обновлен |||| %{smart_count} обновлено |||| %{smart_count} обновлено",
             created: "Элемент создан",
-            deleted: "Элемент удален |||| %{smart_count} удалено",
+            deleted: "Элемент удален |||| %{smart_count} удалено |||| %{smart_count} удалено",
             bad_item: "Элемент не валиден",
             item_doesnt_exist: "Элемент не существует",
             http_error: "Ошибка сервера",
