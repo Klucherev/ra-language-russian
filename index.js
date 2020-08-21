@@ -22,13 +22,16 @@ module.exports = {
             show: "Просмотр",
             sort: "Сортировка",
             undo: "Отменить",
+            unselect: "Не выбрано",
             expand: "Раскрыть",
             close: "Закрыть",
+            open_menu: "Открыть меню",
+            close_menu: "Закрыть меню",
         },
         boolean: {
-          true: "Да",
-          false: "Нет",
-          null: ""
+            true: "Да",
+            false: "Нет",
+            null: ""
         },
         page: {
             create: "Создать %{name}",
@@ -77,7 +80,9 @@ module.exports = {
             loading: "Идет загрузка, пожалуйста, подождите...",
             no: "Нет",
             not_found: "Ошибка URL или вы следуете по неверной ссылке",
-            yes: "Да"
+            yes: "Да",
+            unsaved_changes:
+                "Некоторые из ваших изменений не были сохранены. Вы уверены, что хотите их игнорировать?",
         },
         navigation: {
             no_results: "Результатов не найдено",
@@ -90,6 +95,11 @@ module.exports = {
             page_rows_per_page: "Строк на странице:",
             next: "Следующая",
             prev: "Предыдущая"
+        },
+        sort: {
+            sort_by: 'Сортировать по %{field} %{order}',
+            ASC: 'возрастанию',
+            DESC: 'убыванию',
         },
         auth: {
             auth_check_error: "Пожалуйста, авторизуйтесь для продолжения работы",
