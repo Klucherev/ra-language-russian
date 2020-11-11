@@ -31,7 +31,7 @@ module.exports = {
         boolean: {
             true: "Да",
             false: "Нет",
-            null: ""
+            null: " "
         },
         page: {
             create: "Создать %{name}",
