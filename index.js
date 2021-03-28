@@ -94,7 +94,8 @@ module.exports = {
             page_range_info: "%{offsetBegin}-%{offsetEnd} из %{total}",
             page_rows_per_page: "Строк на странице:",
             next: "Следующая",
-            prev: "Предыдущая"
+            prev: "Предыдущая",
+            skip_nav: "Перейти к содержанию"
         },
         sort: {
             sort_by: 'Сортировать по %{field} %{order}',
