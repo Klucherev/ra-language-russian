@@ -1,18 +1,19 @@
 {
   "compilerOptions": {
-      "allowJs": true,
-      "declaration": false,
-      "experimentalDecorators": true,
-      "lib": ["es2019"],
-      "module": "commonjs",
-      "noImplicitAny": true,
-      "outDir": "dist",
-      "target": "es6",
-      "esModuleInterop": true,
-    "baseUrl": "./src",
-    "paths": {
-      "@/*": ["./*"]
-    }
+    "target": "es2016",
+    "lib": ["es2017", "dom"],
+    "module": "commonjs",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "moduleResolution": "Node"
   },
-  "exclude": ["test", "dist"]
+  "files": [
+    "src/index.ts"
+  ]
 }
