@@ -58,6 +58,8 @@ const RussianTranslation: TranslationMessages = {
             show: '%{name} %{recordRepresentation}',
             empty: 'Нет %{name}.',
             invite: 'Вы хотите добавить еще одну?',
+            access_denied: 'Доступ запрещен',
+            authentication_error: 'Ошибка аутентификации',
         },
         input: {
             file: {
@@ -100,9 +102,13 @@ const RussianTranslation: TranslationMessages = {
             not_found: 'Ошибка URL или вы следуете по неверной ссылке',
             yes: 'Да',
             unsaved_changes: 'Некоторые из ваших изменений не были сохранены. Вы уверены, что хотите их игнорировать?',
+            access_denied: 'У вас нет права доступа к этой странице',
+            authentication_error: 'Ошибка сервера при проверке аутентификации',
         },
         navigation: {
             no_results: 'Результатов не найдено',
+            no_filtered_results: '%{name} не найдено с текущими фильтрами',
+            clear_filters: 'Очистить фильтры',
             no_more_results: 'Страница %{page} выходит за пределы нумерации, попробуйте предыдущую',
             page_out_of_boundaries: 'Страница %{page} вне границ',
             page_out_from_end: 'Невозможно переместиться дальше последней страницы',
@@ -114,7 +120,6 @@ const RussianTranslation: TranslationMessages = {
             first: 'На первую страницу',
             last: 'На последнюю страницу',
             next: 'Следующая',
-            prev: 'Предыдущая',
             previous: 'Предыдущая',
             page_rows_per_page: 'Строк на странице:',
             skip_nav: 'Перейти к содержанию',
