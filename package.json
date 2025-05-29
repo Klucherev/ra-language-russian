@@ -1,6 +1,6 @@
 {
   "name": "ra-language-russian",
-  "version": "5.4.3",
+  "version": "5.4.4",
   "description": "Russian translations for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
