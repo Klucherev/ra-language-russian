@@ -10,7 +10,8 @@
         "build-cjs": "rimraf ./dist/cjs && tsc --outDir dist/cjs",
         "build-esm": "rimraf ./dist/esm && tsc --outDir dist/esm --module es2015",
         "watch": "tsc --outDir dist/esm --module es2015 --watch",
-        "prettier": "prettier --write src"
+        "prettier": "prettier --write src",
+        "test": "yarn run build && node --test tests/*.test.cjs"
     },
     "repository": {
         "type": "git",
@@ -27,7 +28,7 @@
         "translation"
     ],
     "dependencies": {
-        "ra-core": "^5.13.5"
+        "ra-core": "^5.15.4"
     },
     "devDependencies": {
         "rimraf": "^3.0.2",

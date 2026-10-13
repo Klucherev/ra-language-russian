@@ -6,7 +6,8 @@ const RussianTranslation: TranslationMessages = {
             add_filter: 'Добавить фильтр',
             add: 'Добавить',
             back: 'Назад',
-            bulk_actions: '1 выбран |||| %{smart_count} выбрано |||| %{smart_count} выбрано',
+            bulk_actions:
+                'Выбран %{smart_count} элемент |||| Выбрано %{smart_count} элемента |||| Выбрано %{smart_count} элементов',
             cancel: 'Отмена',
             clear_array_input: 'Очистить список',
             clear_input_value: 'Очистить',
@@ -91,12 +92,15 @@ const RussianTranslation: TranslationMessages = {
                 'Сервер аутентификации выдал сообщение об ошибке и ваши учетные данные не были проверены.',
             auth_error: 'Произошла ошибка при валидации токена аутентификации',
             bulk_delete_content:
-                'Вы уверены, что хотите удалить %{name}? |||| Вы уверены, что хотите удалить %{smart_count} объекта? |||| Вы уверены, что хотите удалить %{smart_count} объектов?',
+                'Вы уверены, что хотите удалить %{smart_count} запись? |||| Вы уверены, что хотите удалить %{smart_count} записи? |||| Вы уверены, что хотите удалить %{smart_count} записей?',
             bulk_delete_title:
-                'Удалить %{name} |||| Удалить %{smart_count} %{name} |||| Удалить %{smart_count} %{name}',
+                'Удалить %{smart_count} запись |||| Удалить %{smart_count} записи |||| Удалить %{smart_count} записей',
             bulk_update_content:
-                'Вы уверены, что хотите обновить %{name}? |||| Вы уверены, что хотите обновить %{smart_count} объекта? |||| Вы уверены, что хотите обновить %{smart_count} объектов?',
-            bulk_update_title: 'Обновить %{name} |||| Обновить %{smart_count} %{name}',
+                'Вы уверены, что хотите обновить %{smart_count} запись? |||| Вы уверены, что хотите обновить %{smart_count} записи? |||| Вы уверены, что хотите обновить %{smart_count} записей?',
+            // Ключ используется и для одиночного, и для массового обновления.
+            // При массовом обновлении recordRepresentation не передаётся.
+            bulk_update_title:
+                'Обновить %{smart_count} запись |||| Обновить %{smart_count} записи |||| Обновить %{smart_count} записей',
             clear_array_input: 'Вы уверены, что хотите очистить весь список?',
             delete_content: 'Вы уверены что хотите удалить этот объект',
             delete_title: 'Удалить %{name} "%{recordRepresentation}"', // default = 'Удалить %{name} #%{id}'
@@ -148,9 +152,11 @@ const RussianTranslation: TranslationMessages = {
             logout: 'Выйти',
         },
         notification: {
-            updated: 'Элемент обновлен |||| %{smart_count} обновлено |||| %{smart_count} обновлено',
+            updated:
+                'Обновлена %{smart_count} запись |||| Обновлены %{smart_count} записи |||| Обновлено %{smart_count} записей',
             created: 'Элемент создан',
-            deleted: 'Элемент удален |||| %{smart_count} удалено |||| %{smart_count} удалено',
+            deleted:
+                'Удалена %{smart_count} запись |||| Удалены %{smart_count} записи |||| Удалено %{smart_count} записей',
             bad_item: 'Элемент не валиден',
             item_doesnt_exist: 'Элемент не существует',
             http_error: 'Ошибка сервера',
@@ -184,6 +190,12 @@ const RussianTranslation: TranslationMessages = {
             remove_dialog_title: 'Удалить сохраненный запрос?',
             remove_message: 'Вы уверены, что хотите удалить этот запрос из списка сохраненных запросов?',
             help: 'Отфильтровать список и сохранить запрос на будущее',
+        },
+        guesser: {
+            empty: {
+                title: 'Нет данных для отображения',
+                message: 'Проверьте источник данных',
+            },
         },
         configurable: {
             customize: 'Настроить',
